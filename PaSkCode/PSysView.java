@@ -1,7 +1,25 @@
 package PaSkCode;
 import java.awt.Graphics;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Toolkit;
+import java.util.ArrayList;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.RenderingHints;
+import javax.swing.JPanel;
+import javax.swing.Timer;
 
 public class PSysView {
+	
+    private int radius = 10;
+    private int px;
+    private int py;
+    private int velX;
+    private int velY;
     
     PSysView() {
     }
