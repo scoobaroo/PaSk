@@ -1,13 +1,16 @@
 package PaSkCode;
 
-import java.awt.EventQueue;
 import javax.swing.JFrame;
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class ParticleSkeleton extends JFrame {
 
-    static int BD_WIDTH = 800;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	static int BD_WIDTH = 800;
     static int BD_HEIGHT = 600;
 
     static ArrayList <String> pList; // strings from input file
@@ -34,6 +37,7 @@ public class ParticleSkeleton extends JFrame {
 
     public static void main(String[] args) throws Exception{
 	// get initial particle system state from input file
+	@SuppressWarnings("resource")
 	Scanner input = new Scanner(new java.io.File(args[0]));
 	pList = new ArrayList <String>();
 	while (input.hasNext()) {
