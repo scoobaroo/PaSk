@@ -4,18 +4,17 @@ import java.util.ArrayList;
 public class PSysModel {
     // ArrayList or similar of particles
     // each particle: x, y, velX, velY, radius
-    private int bdWidth = 400;
-    private int bdHeight = 300;
-    private int radius;
-    private int px = bdWidth/2;
-    private int py = bdHeight/2;;
-    private int velX;
-    private int velY;
+    protected int bdWidth = 400;
+    protected int bdHeight = 300;
+    protected int radius = 10;
+    protected int px = bdWidth/2;
+    protected int py = bdHeight/2;;
+    protected int velX;
+    protected int velY;
     
 	static ArrayList <String> pList;
 	
     PSysModel() {
-		pList = new ArrayList <String>();
 	// instantiate list of particles
     }
 

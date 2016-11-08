@@ -63,7 +63,7 @@ public class Board extends JPanel implements ActionListener {
 
 	if (frame % 30 == 0)
 	    System.out.println("Frame: " + frame);
-	frame++;
+		frame++;
 	// all simulation state change code should be wrapped here
 	if (frame == logCycle) {
 	    pSysView.dump(pSystem, logCycle);
@@ -89,7 +89,6 @@ public class Board extends JPanel implements ActionListener {
 
     private void update() {
 	pSystem.update(bdWidth, bdHeight);
-
 	// This block replaced by pSystem.update()
 	/*
 	px += velX;
@@ -109,7 +108,6 @@ public class Board extends JPanel implements ActionListener {
 	    velY = -velY;
 	}
 	*/
-	
     }
 
     private void doDrawing(Graphics g) {
