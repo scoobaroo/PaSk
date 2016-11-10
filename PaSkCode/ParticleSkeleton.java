@@ -11,7 +11,8 @@ public class ParticleSkeleton extends JFrame {
 
     static ArrayList <String> pList; // strings from input file
 
-    public ParticleSkeleton() {   
+    public ParticleSkeleton() {
+        
         initUI();
     }
     

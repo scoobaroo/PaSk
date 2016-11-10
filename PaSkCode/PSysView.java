@@ -6,8 +6,6 @@ import java.awt.RenderingHints;
 
 public class PSysView {
 
-	PSysModel Psystem;
-	
     PSysView() {
     }
 
@@ -16,10 +14,8 @@ public class PSysView {
         Graphics2D g2d = (Graphics2D) g;
 		g2d.setRenderingHints(new RenderingHints(RenderingHints.KEY_TEXT_ANTIALIASING,RenderingHints.VALUE_TEXT_ANTIALIAS_ON));
 		g2d.setColor(Color.RED);
-		for(Particle p : psm.particleList){
-			g2d.fillOval(p.px-p.radius, p.py-p.radius, p.radius*2, p.radius*2);
-		}
-    }	
+		g2d.fillOval(psm.pSystem.px-psm.pSystem.radius, psm.pSystem.py-psm.pSystem.radius, psm.pSystem.radius*2, psm.pSystem.radius*2);
+    }
 
     // dump information on all particles in psm
     void dump(PSysModel psm, int lc) {
